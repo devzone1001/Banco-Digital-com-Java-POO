@@ -19,6 +19,7 @@ public class AplicativoBanco {
         joao.setProfissao("Programador");
         joao.setEstadoCivil("Solteiro");
 
+
         banco.adicionarCliente(joao); // Adicionando cliente ao banco
 
         Conta ccJoao = new ContaCorrente(joao);
@@ -35,6 +36,7 @@ public class AplicativoBanco {
         System.out.println("Data de Nascimento: " + joao.formatarDataNascimento());
         System.out.println("Maior de idade: " + joao.verificarMaioridade());
         joao.imprimirDetalhesCliente();
+
 
         Cliente pedro = new Cliente();
         pedro.setNome("Pedro");
@@ -165,6 +167,8 @@ public class AplicativoBanco {
         Conta poupancaMariana = new ContaPoupanca(mariana);
         ccMariana.depositar(500);
         ccMariana.transferir(300, poupancaMariana);
+        ccMariana.sacar(150);
+
 
         ccMariana.imprimirExtrato();
         poupancaMariana.imprimirExtrato();

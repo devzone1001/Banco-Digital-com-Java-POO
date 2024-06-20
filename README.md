@@ -13,29 +13,6 @@ Este repositório contém um aplicativo de gerenciamento bancário em Java. O ap
   - **ContaPoupanca**: Subclasse de Conta que representa uma conta poupança.
 - **IConta**: Interface que define as operações básicas de uma conta bancária.
 
-## Como Executar
-
-1. Clone este repositório:
-
-   ```sh
-   git clone https://github.com/seu-usuario/aplicativo-banco.git
-   ```
-2. Navegue até o diretório do projeto:
-
-   ```sh
-   cd aplicativo-banco
-   ```
-3. Compile as classes Java:
-
-   ```sh
-   javac *.java
-   ```
-4. Execute o aplicativo:
-
-   ```sh
-   java AplicativoBanco
-   ```
-
 ## Funcionalidades
 
 ### Criação de Clientes e Contas
@@ -54,7 +31,6 @@ Conta poupancaJoao = new ContaPoupanca(joao);
 ccJoao.depositar(100);
 ccJoao.transferir(70, poupancaJoao);
 ```
-
 
 ### Depósitos e Transferências
 
